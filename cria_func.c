@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
-    
-    return 0;
+int* cria_func(int *f, ){
+
 }
+
+typedef int (*funcp)(int* f); 
