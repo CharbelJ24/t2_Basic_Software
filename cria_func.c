@@ -1,11 +1,14 @@
+/* Davi Teixeira 2510420 3WA */
+/* Charbel Janos 2510373 3WA */
+
 #include <stdio.h>
 
 typedef enum {INT_PAR, PTR_PAR} TipoValor;
 typedef enum {PARAM, FIX, IND} OrigemValor;
 
 typedef struct {
-   TipoValor    tipo_val;
-   OrigemValor  orig_val;
+   TipoValor tipo_val;
+   OrigemValor orig_val;
    union {
      int v_int;
      void* v_ptr;
