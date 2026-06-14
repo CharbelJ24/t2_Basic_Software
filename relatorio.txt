@@ -1,2 +1,34 @@
 Davi Teixeira 2510420 3WA
 Charbel Janos 2510373 3WA
+
+Teste 1 - mult com 2o parametro FIX = 10 e 1o PARAM:
+  params[0]: INT_PAR / PARAM
+  params[1]: INT_PAR / FIX / valor = 10
+  for (i = 1; i <= 10; i++) printf("%d\n", f_mult(i));
+  Saida:
+    10 20 30 40 50 60 70 80 90 100
+
+Teste 2 - mult com 1o parametro IND = &i e 2o FIX = 10:
+  params[0]: INT_PAR / IND / valor = &i
+  params[1]: INT_PAR / FIX / valor = 10
+  for (i = 1; i <= 10; i++) printf("%d\n", f_mult());
+  Saida:
+    10 20 30 40 50 60 70 80 90 100
+
+Teste 3 - memcmp com 1o parametro FIX, 2o e 3o PARAM:
+  params[0]: PTR_PAR / FIX / valor = "quero saber se a outra string e um prefixo dessa"
+  params[1]: PTR_PAR / PARAM
+  params[2]: INT_PAR / PARAM
+  mesmo_prefixo(s, 12) e mesmo_prefixo(s, 16) com s = "quero saber tudo"
+  Saida:
+    'quero saber tudo' tem mesmo prefixo-12? SIM
+    'quero saber tudo' tem mesmo prefixo-16? NAO
+
+Teste 4 - mult com ambos os parametros repassados (PARAM), sem amarrar nada:
+  params[0]: INT_PAR / PARAM
+  params[1]: INT_PAR / PARAM
+  f_mult(3, 4) e f_mult(7, 5)
+  Saida:
+    12 35
+
+Todos os casos testados funcionaram corretamente.
